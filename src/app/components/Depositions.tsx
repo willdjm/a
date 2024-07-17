@@ -23,14 +23,14 @@ return (
     </div>
 
     {/* Conteúdo sobreposto */}
-    <div className="relative z-10 text-white text-center">
+    <div className="relative z-10 text-white text-center w-full flex flex-col items-center justify-center">
       <h1 className="text-white font-bold uppercase text-[2.406rem]">DEPOIMENTOS</h1>
 
-      <Carousel className='w-full max-w-[90rem] flex pt-16' showStatus={false} showThumbs={false} infiniteLoop
+      <Carousel className='w-full max-w-7xl flex pt-16' showStatus={false} showThumbs={false} infiniteLoop
                 showArrows={true} showIndicators={false} renderArrowPrev={(onClickHandler, hasPrev)=>
                 hasPrev && (
                 <button type="button" onClick={onClickHandler}
-                    className="absolute md:top-1/2 transform -translate-y-1/2 md:left-2 z-10 bg-transparent border-none cursor-pointer text-amber-400">
+                    className="absolute md:top-1/2 transform -translate-y-1/2 md:left-0 z-10 bg-transparent border-none cursor-pointer text-amber-400">
                     <FaChevronLeft size={40} />
                 </button>
                 )
@@ -38,7 +38,7 @@ return (
                 renderArrowNext={(onClickHandler, hasNext) =>
                 hasNext && (
                 <button type="button" onClick={onClickHandler}
-                    className="absolute top-1/2 transform -translate-y-1/2 right-2 z-10 bg-transparent border-none cursor-pointer text-amber-400">
+                    className="absolute top-1/2 transform -translate-y-1/2 right-0 z-10 bg-transparent border-none cursor-pointer text-amber-400">
                     <FaChevronRight size={40} />
                 </button>
                 )
