@@ -6,7 +6,7 @@ export function FAQ() {
 
 return (
 
-    <div className='md:justify-center items-center flex flex-col py-36 md:max-w-6xl w-full gap-16'>
+    <div className=' md:justify-center items-center flex flex-col py-36 w-full gap-16'>
         <div className="flex flex-col w-full items-center justify-center">
             <p className="text-blue-950 font-bold text-[35px] uppercase">FAQ</p>
             <p className="text-blue-950 text-[35px]">(Perguntas Frequentes)</p>
