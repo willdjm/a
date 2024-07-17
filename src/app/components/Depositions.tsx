@@ -17,14 +17,14 @@ return (
             </picture>
         </div>
         <picture className="">
-            <img src="/bg-depoimentos.webp" className="w-full h-auto relative" alt="" />
+            <img src="/bg-depoimentos.webp" className="w-full h-full object-cover relative" alt="" />
         </picture>
 
         <div className="absolute z-20 w-full gap-10 flex flex-col items-center justify-center top-36">
             <h3 className="flex items-start justify-center text-white font-bold uppercase text-[2.406rem]">DEPOIMENTOS
             </h3>
 
-            <Carousel className='w-full max-w-[90rem] flex pt-10' showStatus={false} showThumbs={false} infiniteLoop
+            <Carousel className='w-full max-w-6xl flex pt-10' showStatus={false} showThumbs={false} infiniteLoop
                 showArrows={true} showIndicators={false} renderArrowPrev={(onClickHandler, hasPrev)=>
                 hasPrev && (
                 <button type="button" onClick={onClickHandler}
