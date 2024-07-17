@@ -17,19 +17,19 @@ import { ScrollToTop } from "./components/ScrollToTop";
 export default function Home() {
   return (
 <main>
-{/* <Navbar/>
+<Navbar/>
 <Banner/>
 <About/>
 <ObjectivesAndBenefits/>
 <OrientationsGeneral/>
 <Programming/>
 <InformationsForEducators/>
-<RulesAndRegulations/> */}
+<RulesAndRegulations/>
 <Depositions/> 
-{/* <OurPartnersAndSponsors/>
+<OurPartnersAndSponsors/>
 <Contact/>
 <Footer/>
-<ScrollToTop/> */}
+<ScrollToTop/>
 </main>
   );
 }
