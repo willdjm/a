@@ -4,6 +4,7 @@ import { About } from "./components/About";
 import { Banner } from "./components/Banner";
 import { Contact } from "./components/Contatct";
 import { Depositions } from "./components/Depositions";
+import { FAQ } from "./components/FAQ";
 import { Footer } from "./components/Footer";
 import { InformationsForEducators } from "./components/InformationsForEducators";
 import { Navbar } from "./components/Navbar";
@@ -25,11 +26,12 @@ export default function Home() {
 <Programming/>
 <InformationsForEducators/>
 <RulesAndRegulations/> */}
-<Depositions/> 
-{/* <OurPartnersAndSponsors/>
+<Depositions/>
+<FAQ/>
+<OurPartnersAndSponsors/>
 <Contact/>
 <Footer/>
-<ScrollToTop/> */}
+<ScrollToTop/>
 </main>
   );
 }

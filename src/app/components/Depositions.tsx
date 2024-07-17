@@ -15,12 +15,15 @@ return (
 
 
     <div className="absolute inset-0 overflow-hidden">
+        <picture>
       <img
         className="object-cover w-full h-full"
         src="/bg-depoimentos.png"  // Substitua pelo caminho da sua imagem
         alt="Imagem de fundo"
       />
+      </picture>
     </div>
+    
 
     {/* Conteúdo sobreposto */}
     <div className="relative z-10 text-white text-center w-full flex flex-col items-center justify-center">
