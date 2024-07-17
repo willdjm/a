@@ -9,24 +9,22 @@ export function Depositions() {
 
 return (
 
-    <section className="relative h-screen flex flex-col items-center justify-center w-full">
-    {/* Imagem de fundo */}
-    
+<div id="Depositions" className=" relative flex flex-col justify-center items-center -top-[54rem]">
+    <div className="relative flex items-center justify-center w-full">
+        <div className="absolute z-20 w-full flex items-start justify-end -top-24 mr-4">
+            <picture className="">
+                <img src="/img-depoimentos.webp" className="" alt="" />
+            </picture>
+        </div>
+        <picture className="">
+            <img src="/bg-depoimentos.webp" className="w-full h-auto relative" alt="" />
+        </picture>
 
+        <div className="absolute z-20 w-full gap-10 flex flex-col items-center justify-center top-36">
+            <h3 className="flex items-start justify-center text-white font-bold uppercase text-[2.406rem]">DEPOIMENTOS
+            </h3>
 
-    <div className="absolute inset-0 overflow-hidden">
-      <img
-        className="object-cover w-full h-full"
-        src="/bg-depoimentos.png"  // Substitua pelo caminho da sua imagem
-        alt="Imagem de fundo"
-      />
-    </div>
-
-    {/* Conteúdo sobreposto */}
-    <div className="relative z-10 text-white text-center">
-      <h1 className="text-white font-bold uppercase text-[2.406rem]">DEPOIMENTOS</h1>
-
-      <Carousel className='w-full max-w-[90rem] flex pt-16' showStatus={false} showThumbs={false} infiniteLoop
+            <Carousel className='w-full max-w-[90rem] flex pt-10' showStatus={false} showThumbs={false} infiniteLoop
                 showArrows={true} showIndicators={false} renderArrowPrev={(onClickHandler, hasPrev)=>
                 hasPrev && (
                 <button type="button" onClick={onClickHandler}
@@ -119,8 +117,31 @@ return (
                     </div>
                 </div>
             </Carousel>
+        </div>
 
     </div>
-  </section>
+
+    <div className='md:justify-center items-center flex flex-col py-36 md:max-w-6xl w-full gap-16'>
+        <div className="flex flex-col w-full items-center justify-center">
+            <p className="text-blue-950 font-bold text-[35px] uppercase">FAQ</p>
+            <p className="text-blue-950 text-[35px]">(Perguntas Frequentes)</p>
+        </div>
+        <div className="flex flex-col w-full items-center justify-center">
+            <p className="text-blue-950 font-bold text-xl">Como faço para me inscrever?</p>
+            <p className="text-blue-950 text-[17px]">Acesse o formulário de inscrição online e preencha todos os campos
+                obrigatórios.</p>
+        </div>
+        <div className="flex flex-col w-full items-center justify-center">
+            <p className="text-blue-950 font-bold text-xl">Há algum custo para participar?</p>
+            <p className="text-blue-950 text-[17px]">A inscrição na OLIMPÍADA NACIONAL DE NANOTECNOLOGIA é <span
+                    className='underline'>gratuita.</span></p>
+        </div>
+        <button className="flex flex-col w-full items-center justify-center">
+            <a href="#" target="_blank" className="text-blue-950 text-[17px] flex items-center justify-center gap-2">Ver
+                mais
+                <SlArrowDown /></a>
+        </button>
+    </div>
+</div>
 );
 }
